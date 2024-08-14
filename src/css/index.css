@@ -1,6 +1,9 @@
 @charset "UTF-8";
+@import url("utility.css");
+@import url("responsive.css");
 @import url("header.css");
 @import url("nav.css");
+@import url("section.css");
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -20,33 +23,36 @@
     --text-color-primary: #F1F5F9;
     --text-color-secondary: #CBD5E1;
     --font: "Archivo", sans-serif;
-    --line-height: 1.44;
+    --line-height: 144%;
     --padding: 20px 32px;
+    --H1: normal bolder 1.5em var(--font);
+    --H2: normal bolder 1em var(--font);
+    --H3: normal bolder .875em var(--font);
+    --span: normal 600 .875em var(--font);
+    --paragraph: normal 400 .875em var(--font);
+    --border-radius: 4px;
 }
 
 h1 {
-    font: normal bolder 1.5em var(--font);
+    font: var(--H1 );
     line-height: var(--line-height);
 }
 
-h2 {
-    font: normal bolder 1em var(--font);
-    line-height: var(--line-height);
-}
+
 
 h3 {
-    font: normal bolder .875em var(--font);
+    font: var(--H3);
     line-height: var(--line-height);
 }
 
 span,
 a {
-    font: normal 600 .875em var(--font);
+    font: var(--span);
     line-height: var(--line-height);
 }
 
 p {
-    font: normal 400 .875em var(--font);
+    font: var(--paragraph);
     line-height: var(--line-height);
 }
 
@@ -54,10 +60,25 @@ p {
 body{
     background-color: var(--bg-color);
     display: grid;
-    grid-template:
-    "header"
-    "nav" 
-    "section section";
-    grid-area: header;
-    grid-area: nav;
+    width: 100%;
+    justify-content: center;
+    /*zoom: 115%;*/
+}
+
+.container{
+    display: grid;
+    max-width: 1440px;
+    justify-content: center;
+}
+
+img{
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    max-width: 100%;
+}
+
+main{
+    display: grid;
+    padding: 0 32px;
 }

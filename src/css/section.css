@@ -1,0 +1,53 @@
+@charset "UTF-8";
+section{
+    display: grid;
+}
+.card{
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    &::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        top: 50%;
+        background-image: linear-gradient(180deg, transparent 0%, #020617);
+    }
+    figcaption{
+        position: absolute;
+        bottom: 0;
+        padding: 24px;
+        color: var(--text-color-primary);
+        &:has(.text-lg){
+            padding: 12px;
+        }
+        
+    }
+
+.text-2xl {
+        font: var(--H1);
+        line-height: var(--line-height);
+        margin-top: 14px;
+    }
+
+.text-xl {
+        font: var(--H2);
+        line-height: var(--line-height);
+        margin-top: 14px;
+    }
+
+.text-lg {
+        font: var(--H3);
+        line-height: var(--line-height);
+        margin-top: 14px;
+    }
+
+
+    span{
+        display: inline-block;
+        background-color: var(--brand-color-dark);
+        padding: 8px;
+        border-radius: var(--border-radius);
+        text-transform: uppercase;
+    }
+}
