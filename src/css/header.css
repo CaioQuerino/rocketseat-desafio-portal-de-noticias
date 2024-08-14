@@ -1,1 +1,17 @@
 @charset "UTF-8";
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 32px;
+    align-items: center;
+    max-height: 72px;
+    font: var(--span);
+    color: var(--text-color-primary);
+}
+
+header>.nav-item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
