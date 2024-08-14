@@ -3,7 +3,7 @@
 header{
     display: flex;
     justify-content: space-between;
-    padding: 20px 32px;
+    padding: var(--padding);
     align-items: center;
     max-height: 72px;
     font: var(--span);

@@ -8,9 +8,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
-:root{
+:root {
     --brand-color-light: #60A5FA;
     --brand-color-dark: #1D4ED8;
     --bg-color: #0F172A;
@@ -18,13 +20,36 @@
     --text-color-primary: #F1F5F9;
     --text-color-secondary: #CBD5E1;
     --font: "Archivo", sans-serif;
-    --line-height: 144%;
-    --H1: normal bolder 1.5em var(--font) var(var(--line-height));
-    --H2: normal bolder 1em var(--font) var(var(--line-height));
-    --H3: normal bolder .875em var(--font) var(var(--line-height));
-    --span: normal 600 .875em var(--font) var(var(--line-height));
-    --paragraph: normal 400 .875em var(--font) var(var(--line-height));
+    --line-height: 1.44;
+    --padding: 20px 32px;
 }
+
+h1 {
+    font: normal bolder 1.5em var(--font);
+    line-height: var(--line-height);
+}
+
+h2 {
+    font: normal bolder 1em var(--font);
+    line-height: var(--line-height);
+}
+
+h3 {
+    font: normal bolder .875em var(--font);
+    line-height: var(--line-height);
+}
+
+span,
+a {
+    font: normal 600 .875em var(--font);
+    line-height: var(--line-height);
+}
+
+p {
+    font: normal 400 .875em var(--font);
+    line-height: var(--line-height);
+}
+
 
 body{
     background-color: var(--bg-color);
