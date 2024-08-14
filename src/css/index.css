@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@import url("header.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --brand-color-light: #60A5FA;
+    --brand-color-dark: #1D4ED8;
+    --bg-color: #0F172A;
+    --stroke-color: #1E293B;
+    --text-color-primary: #F1F5F9;
+    --text-color-secondary: #CBD5E1;
+    --font: "Archivo", sans-serif;
+    --line-height: 144%;
+    --H1: normal bolder 1.5em var(--font) var(var(--line-height));
+    --H2: normal bolder 1em var(--font) var(var(--line-height));
+    --H3: normal bolder .875em var(--font) var(var(--line-height));
+    --span: normal 600 .875em var(--font) var(var(--line-height));
+    --paragraph: normal 400 .875em var(--font) var(var(--line-height))
+}
+
+body{
+    background-color: var(--bg-color);
+}
