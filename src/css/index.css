@@ -56,11 +56,14 @@ p {
     line-height: var(--line-height);
 }
 
+html{
+    display: grid;
+}
+
 
 body{
     background-color: var(--bg-color);
     display: grid;
-    width: 100%;
     justify-content: center;
     /*zoom: 115%;*/
 }
