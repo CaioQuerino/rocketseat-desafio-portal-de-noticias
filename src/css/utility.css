@@ -8,10 +8,41 @@
     grid-auto-flow: column;
 }
 
+.grid-flow-row{
+    grid-auto-flow: row;
+}
+
 .gap-16{
     gap: 16px;
 }
 
 .grid-cols-2{
     grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-4{
+    grid-template-columns: repeat(4, 1fr)
+}
+
+.margin-top{
+    margin-top: 80px;
+}
+
+.text-2xl {
+    font: var(--H1);
+    line-height: var(--line-height);
+    margin-top: 14px;
+}
+
+.text-xl {
+    font: var(--H2);
+    line-height: var(--line-height);
+    margin-top: 14px;
+}
+
+.text-lg {
+    font: var(--H3);
+    line-height: var(--line-height);
+    color: var(--text-color-primary);
+    margin-top: 14px;
 }

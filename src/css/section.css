@@ -21,27 +21,7 @@ section{
         &:has(.text-lg){
             padding: 12px;
         }
-        
     }
-
-.text-2xl {
-        font: var(--H1);
-        line-height: var(--line-height);
-        margin-top: 14px;
-    }
-
-.text-xl {
-        font: var(--H2);
-        line-height: var(--line-height);
-        margin-top: 14px;
-    }
-
-.text-lg {
-        font: var(--H3);
-        line-height: var(--line-height);
-        margin-top: 14px;
-    }
-
 
     span{
         display: inline-block;
@@ -50,4 +30,8 @@ section{
         border-radius: var(--border-radius);
         text-transform: uppercase;
     }
+}
+
+.mais-lidas-da-semana{
+    align-items: center;
 }
